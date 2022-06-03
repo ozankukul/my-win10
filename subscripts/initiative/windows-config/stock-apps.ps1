@@ -1,3 +1,6 @@
+Write-Host "> stock-apps.ps1" -ForegroundColor magenta
+
+
 $list = 
 "Microsoft.BingWeather",
 "Microsoft.WindowsCommunicationsApps",
@@ -18,3 +21,5 @@ $list | ForEach-Object {
     Get-AppxPackage $_ -AllUsers | Remove-AppxPackage
     Get-AppXProvisionedPackage -Online | Where DisplayNam -like $_ | Remove-AppxProvisionedPackage -Online
 }
+
+Write-Host "end of stock-apps.ps1"
