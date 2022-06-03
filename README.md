@@ -9,5 +9,9 @@ manual requirements:
 5. admin shell: winget source update;
 6. admin shell: run main.ps1;
 7. admin shell: agree to the msstore terms;
-   reboot your system
-   run reboot.ps1
+8. reboot your system
+9. run reboot.ps1
+
+# References
+
+- Big thanks to [Jay Harris](https://github.com/jayharris/dotfiles-windows) as his repo has been a library to me.
