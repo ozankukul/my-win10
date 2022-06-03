@@ -9,3 +9,5 @@ Write-Host "> start powershell -Wait {pnpm install --global typescript > './pnpm
 start powershell -Wait {pnpm install --global typescript > "./pnpm_log.txt";};
 
 Write-Host "end of pnpm.ps1";
+
+Refresh-Environment;

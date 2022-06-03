@@ -27,3 +27,5 @@ Write-Host "> winget install OpenJS.NodeJS.LTS --silent;";
 winget install OpenJS.NodeJS.LTS --silent;
 
 Write-Host "end of winget.ps1";
+
+Refresh-Environment

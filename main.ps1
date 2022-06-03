@@ -7,16 +7,11 @@ Write-Host "> main.ps1" -ForegroundColor magenta;
 #scripts
 ./subscripts/initiative/wsl.ps1;
 ./subscripts/initiative/winget.ps1;
-Refresh-Environment;
-
 ./subscripts/initiative/npm.ps1;
-Refresh-Environment;
 ./subscripts/initiative/pnpm.ps1;
-
 ./subscripts/initiative/capslock-task.ps1;
 
 Write-Host "end of main.ps1";
-
 
 #TODO
 #install rustup
