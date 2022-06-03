@@ -1,17 +1,17 @@
 # Required: admin rights, winget cli
-Write-Host "> main.ps1" -ForegroundColor magenta;
+Write-Host "> main.ps1" -ForegroundColor magenta
 
 #lib
-./lib/Refresh-Environment.ps1;
+./lib/Refresh-Environment.ps1
 
 #scripts
-./subscripts/initiative/wsl.ps1;
-./subscripts/initiative/winget.ps1;
-./subscripts/initiative/npm.ps1;
-./subscripts/initiative/pnpm.ps1;
-./subscripts/initiative/capslock-task.ps1;
+./subscripts/initiative/wsl.ps1
+./subscripts/initiative/winget.ps1
+./subscripts/initiative/npm.ps1
+./subscripts/initiative/pnpm.ps1
+./subscripts/initiative/capslock-task.ps1
 
-Write-Host "end of main.ps1";
+Write-Host "end of main.ps1"
 
 #TODO
 #install rustup
