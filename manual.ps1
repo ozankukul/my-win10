@@ -1,20 +1,19 @@
 Write-Host "> manual.ps1" -ForegroundColor magenta
 
-Write-Host "winget install Kingsoft.WPSOffice --silent"
-winget install Kingsoft.WPSOffice --silent
-
 #TODO problematic msvs:
 Write-Host "> winget install Microsoft.VisualStudio.2022.Community --silent"
 winget install Microsoft.VisualStudio.2022.Community --silent
 
+$list = 
 #TODO prompts user
-Write-Host "> winget install 9NTM2QC6QWS7 --source msstore --silent #lively wallpaper"
-winget install 9NTM2QC6QWS7 --source msstore --silent #lively wallpaper
+"9NTM2QC6QWS7", #lively wall paper
+"9PF4KZ2VN4W9", #translucenttb
+"9NHL4NSC67WM", #notepads
+"Kingsoft.WPSOffice"
 
-Write-Host "> winget install 9PF4KZ2VN4W9 --source msstore --silent #translucenttb"
-winget install 9PF4KZ2VN4W9 --source msstore --silent #translucenttb
-
-Write-Host "> winget install 9NHL4NSC67WM --silent #Notepads App"
-winget install 9NHL4NSC67WM --source msstore --silent #Notepads App
+$list | ForEach-Object {
+    Write-Host "Installing $_" -ForegroundColor Cyan
+    winget install $_ --silent
+}
 
 Write-Host "end of manual.ps1"
