@@ -7,10 +7,10 @@ manual requirements:
 3. download "Power Automate" from msstore
 4. admin shell: Set-ExecutionPolicy Bypass
 5. admin shell: winget source update
-6. admin shell: run main.ps1
+6. admin shell: ./main.ps1
 7. admin shell: agree to the msstore terms
 8. reboot your system
-9. run reboot.ps1
+9. admin shell: ./reboot.ps1
 
 # References
 
