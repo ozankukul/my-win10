@@ -1,17 +1,22 @@
 # Required: admin rights, winget cli
-Write-Host "> main.ps1" -ForegroundColor magenta
+Write-Host "> $PSCommandPath" -ForegroundColor magenta
 
-#lib
-./lib/Refresh-Environment.ps1
+#libraries
+"./lib/Refresh-Environment.ps1",
 
 #scripts
-./subscripts/initiative/wsl.ps1
-./subscripts/initiative/winget.ps1
-./subscripts/initiative/npm.ps1
-./subscripts/initiative/pnpm.ps1
-./subscripts/initiative/capslock-task.ps1
+"./subscripts/main/wsl.ps1",
+"./subscripts/main/winget.ps1",
+"./subscripts/main/npm.ps1",
+"./subscripts/main/pnpm.ps1",
+"./subscripts/main/capslock-task.ps1" |
 
-Write-Host "end of main.ps1"
+ForEach-Object {
+    Write-Host $_ -ForegroundColor magenta
+    Invoke-Expression $_
+}
+
+Write-Host "end of $PSCommandPath" -ForegroundColor magenta
 
 #TODO
 #install rustup
