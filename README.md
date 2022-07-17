@@ -18,4 +18,5 @@
 - Hyper-V Windows 10
 
 ## References
-- Big thanks to [Jay Harris](https://github.com/jayharris/dotfiles-windows) as his repo has been a library to me.
+- Thanks to [Disassembler0](https://github.com/Disassembler0/Win10-Initial-Setup-Script)
+- Thanks to [jayharris](https://github.com/jayharris/dotfiles-windows)
