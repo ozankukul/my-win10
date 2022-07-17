@@ -1,4 +1,4 @@
-# win-setup-automation
+# my-win10
 
 ### Manual requirements
 1. log in to msstore
