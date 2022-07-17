@@ -1,7 +1,6 @@
-# win-setup-automation
+# my-win10
 
-manual requirements:
-
+### Manual requirements
 1. log in to msstore
 2. download "App Installer" from msstore
 3. download "Power Automate" from msstore
@@ -12,6 +11,12 @@ manual requirements:
 8. reboot your system
 9. admin shell: ./reboot.ps1
 
-# References
+### Todo
+- turn off sticky keys
 
-- Big thanks to [Jay Harris](https://github.com/jayharris/dotfiles-windows) as his repo has been a library to me.
+### Testing environment
+- Hyper-V Windows 10
+
+## References
+- Thanks to [Disassembler0](https://github.com/Disassembler0/Win10-Initial-Setup-Script)
+- Thanks to [jayharris](https://github.com/jayharris/dotfiles-windows)
