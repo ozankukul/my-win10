@@ -2,7 +2,13 @@
 Write-Host "> $PSCommandPath" -ForegroundColor magenta
 
 #libraries
-"./lib/Refresh-Environment.ps1",
+"./lib/Refresh-Environment.psm1",
+"./lib/Win10.psm1",
+
+ForEach-Object {
+    Write-Host $_ -ForegroundColor magenta
+    Import-Module $_
+}
 
 #scripts
 "./subscripts/main/wsl.ps1",
@@ -19,9 +25,6 @@ ForEach-Object {
 Write-Host "end of $PSCommandPath" -ForegroundColor magenta
 
 #TODO
-#install rustup
-#power-auto system: configure windows settings, startup, fileexp quick access
-#power-auto apps: MSVS, notepads, lively
-#dotfiles: gitconfig, autohotkey script 
-
-#TODO: powershell config script
+#power-auto system configuration for: startup, fileexp quick access
+#power-auto app configuration for: MSVS, notepads, lively
+#dotfiles: .gitconfig, .ahk
