@@ -42,3 +42,8 @@ Set-ItemProperty $_ "PopupColors"          0xF0
 # Adjust opacity between 30% and 100%: 0x4C to 0xFF -or- 76 to 255
 Set-ItemProperty $_ "WindowAlpha"          0xE5
 }
+
+# Set powershell profile for custom prompt etc.
+md (Split-Path -Path $PROFILE) -Force
+cp .\profile.ps1.config $PROFILE -Force
+
