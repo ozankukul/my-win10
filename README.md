@@ -14,6 +14,7 @@
 ### Todo
 
 - turn off sticky keys
+- add .gitconfig
 
 ### Testing environment
 
