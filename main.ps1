@@ -13,6 +13,7 @@ ForEach-Object {
 # scripts
 "./subscripts/main/windows-config/powershell.ps1",
 "./subscripts/main/windows-config/uninstaller.ps1",
+"./subscripts/main/windows-config/windows-config.ps1",
 "./subscripts/main/winget.ps1",
 "./subscripts/main/capslock-task.ps1" |
 
