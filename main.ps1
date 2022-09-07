@@ -22,16 +22,16 @@ ForEach-Object {
 }
 
 # developer scripts
-"./subscripts/developer/winget.ps1",
-"./subscripts/developer/npm.ps1"
-"./subscripts/developer/pnpm.ps1",
-"./subscripts/developer/wsl.ps1",
-"./subscripts/developer/gitconfig.ps1" |
+# "./subscripts/developer/winget.ps1",
+# "./subscripts/developer/npm.ps1"
+# "./subscripts/developer/pnpm.ps1",
+# "./subscripts/developer/wsl.ps1",
+# "./subscripts/developer/gitconfig.ps1" |
 
-ForEach-Object {
-    Write-Host $_ -ForegroundColor magenta
-    Invoke-Expression $_
-}
+# ForEach-Object {
+#     Write-Host $_ -ForegroundColor magenta
+#     Invoke-Expression $_
+# }
 
 Write-Host "end of $PSCommandPath" -ForegroundColor magenta
 
