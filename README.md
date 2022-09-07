@@ -13,7 +13,7 @@
 
 ### Todo
 
-- turn off sticky keys
+- ...
 
 ### Testing environment
 
