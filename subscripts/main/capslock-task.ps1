@@ -8,3 +8,5 @@ $settings = New-ScheduledTaskSettingsSet -MultipleInstances IgnoreNew -DontStopI
 $settings.executionTimeLimit = "PT0S"
 
 Register-ScheduledTask -Action $action -Trigger $trigger -Principal $principal -Settings $settings -TaskPath "\MyTasks" -TaskName "Capslock Remap" -Description "provided to you by Ozan"
+
+cp ./files/ozan-keymap.ahk "C:\Program Files\AutoHotkey\ozan-keymap.ahk" -Force
