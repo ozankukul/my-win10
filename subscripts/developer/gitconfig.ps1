@@ -1,1 +1,1 @@
-cp ./.gitconfig ~/.gitconfig -Force
+cp ./files/.gitconfig ~/.gitconfig -Force

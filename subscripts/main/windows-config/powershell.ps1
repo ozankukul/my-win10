@@ -44,5 +44,5 @@ Set-ItemProperty 'HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Console\Tru
 
 # Set powershell profile for custom prompt etc.
 md (Split-Path -Path $PROFILE) -Force
-cp .\profile.ps1.config $PROFILE -Force
+cp .\files\profile.ps1.config $PROFILE -Force
 
