@@ -3,7 +3,7 @@ Write-Host "> $PSCommandPath" -ForegroundColor magenta
 
 # libraries
 "./lib/Refresh-Environment.psm1",
-"./lib/Win10.psm1",
+"./lib/Win10.psm1" |
 
 ForEach-Object {
     Write-Host $_ -ForegroundColor magenta
