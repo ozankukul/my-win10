@@ -1,4 +1,4 @@
-"./subscripts/reboot/wsl.ps1" |
+"./subscripts/developer/reboot/wsl.ps1" |
 
 ForEach-Object {
     Write-Host $_ -ForegroundColor magenta

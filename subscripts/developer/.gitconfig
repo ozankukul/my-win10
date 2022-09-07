@@ -1,0 +1,14 @@
+[user]
+	name = Ozan Kukul
+	email = ozankukul.cs@gmail.com
+[init]
+	defaultBranch = main
+[alias]
+	st = status -s
+	co = checkout
+	bn = branch -vv
+	lg = log --oneline
+	last = log -1 HEAD
+	cm = commit -m
+	fe = fetch
+	cfg = config --global -l
